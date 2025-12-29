@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  /* Default to Dark Mode (Spotify Style) */
+  --background: #121212;
+  --foreground: #ffffff;
+  
+  --card: #181818;
+  --card-foreground: #ffffff;
+  
+  --popover: #282828;
+  --popover-foreground: #ffffff;
+  
+  --primary: #1DB954; /* Spotify Green */
+  --primary-foreground: #000000;
+  
+  --secondary: #b3b3b3;
+  --secondary-foreground: #121212;
+  
+  --muted: #282828;
+  --muted-foreground: #b3b3b3;
+  
+  --accent: #282828;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #282828;
+  --input: #282828;
+  --ring: #1DB954;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Utilities */
+.glass {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(10px);
+}
